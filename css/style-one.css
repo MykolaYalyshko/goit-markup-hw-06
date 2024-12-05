@@ -725,7 +725,6 @@ img {
 .portfolio-cover {
     position: relative;
     overflow: hidden;
-    height: 300px;
 }
 
 .portfolio-cover img {
@@ -778,7 +777,7 @@ img {
     }
 
     .potrfolio-item {
-        flex-basis: calc((100% - 24px) / 2);
+        max-width: calc((100% - 24px) / 2);
     }
     
 }
@@ -786,7 +785,7 @@ img {
 @media screen and (min-width: 1158px) {
 
     .portfolio-item {
-        flex-basis: calc((100% - 48px) / 6);
+        max-width: calc((100% - 48px) / 3);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition-property: box-shadow;
         box-shadow: none;
