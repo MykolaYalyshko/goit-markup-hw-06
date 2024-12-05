@@ -976,6 +976,8 @@ img {
 
 @media screen and (min-width: 768px) {
 
+    /* footer */
+
     .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -998,6 +1000,8 @@ img {
         justify-content: flex-start;
     }
     
+    /* paragraph */
+
     .paragraph-title {
         justify-content: flex-start;
         font-weight: 500;
@@ -1047,8 +1051,8 @@ img {
 
 @media screen and (min-width: 1158px) {
     .footer-container {
-        flex-wrap: nowrap;
-        margin: 0 auto;
+        display: flex;
+        align-items: baseline;
         gap: 0;
     }
 
