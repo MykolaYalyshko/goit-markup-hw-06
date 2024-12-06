@@ -832,7 +832,7 @@ img {
 }
 
 .footer_content {
-    margin-right: 24px;
+    padding-right: 24px;
 }
 
 .footer-logo {
@@ -909,14 +909,14 @@ img {
 
 
 .paragraph-title {
-        display: flex;
-        justify-content: center;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #fff;
-        margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
 }
 
 .paragraph-form {
@@ -1050,18 +1050,26 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .container {
+        padding: 0 15px
+    }
+
     .footer-container {
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: baseline;
         gap: 0;
     }
 
-    .footer-logo {
-        margin-right: 120px;
+    .footer_content {
+        padding-right: 96px;
     }
 
+
     .footer-right-x {
-        margin-right: 80px;
+        padding-right: 80px;
     }
 
 }
