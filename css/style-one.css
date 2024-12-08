@@ -1,7 +1,3 @@
-.hidden {
-    display: none;
-}
-
 body {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
@@ -45,6 +41,10 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.hidden {
+    display: none;
 }
  
 /* common*/
@@ -346,15 +346,25 @@ img {
 /* main title*/
 
 .main-title {
+    max-width: 320px;
+    margin: 0 auto;
     background: #2e2f42;
     text-align: center;
     padding: 72px 0;
     background: linear-gradient(
         rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/peoplemobile.png);
+        url(../images/main.title/mobile-image-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .main-title {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/main.title/mobile-image-mobile@2x.jpg);
+    }
 }
 
 .main-title-title {
@@ -394,17 +404,23 @@ img {
 
 @media only screen and (min-width: 768px) {
     .main-title {
-        background: #2e2f42;
-        text-align: center;
-        padding: 112px 0;
-        background: linear-gradient(
-            rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        
+    max-width: 768px; 
+    margin: 0 auto; 
+    background: linear-gradient(
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/main.title/tablet-image-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .main-title {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                    url(../images/main.title/tablet-image-tablet@2x.jpg);
+        }
+   }
 
     .main-title-title {
         max-width: 496px;
@@ -443,10 +459,24 @@ img {
 
 @media screen and (min-width: 1158px) {
     .main-title {
-        max-width: 1440px;
-        padding: 188px 0;
-        margin: 0 auto;
+    max-width: 1440px;
+    padding: 188px 0;
+    margin: 0 auto;
+    background: linear-gradient(
+                    rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                    url(../images/main.title/dekstop-image-dekstop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     }
+
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .main-title {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                    url(../images/main.title/dekstop-image-dekstop@2x.jpg);
+        }
+   }
 
     .button-btn:hover {
         background-color: #404BBF;
@@ -722,6 +752,8 @@ img {
     position: relative;
     overflow: hidden;
 }
+
+
 
 .portfolio-cover-text {
     position: absolute;
