@@ -1,10 +1,8 @@
 body {
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
     color: #434455;
-    background-color: #fff;
-    margin: 0 auto;
-    padding: 0;
+    background-color: #fff; 
 }
 
 ul, 
@@ -29,6 +27,7 @@ p {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
